@@ -17,5 +17,10 @@ namespace WordCounter.Models
     {
       return _phrase;
     }
+
+    public string GetTarget()
+    {
+      return _target;
+    }
   }
 }

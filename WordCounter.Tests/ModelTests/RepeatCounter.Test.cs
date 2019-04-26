@@ -14,6 +14,13 @@ namespace WordCounter.Tests
     }
 
     [TestMethod]
+    public void GetTarget_CallConstructor_GetTargetReturnsTarget()
+    {
+      RepeatCounter myCounter = new RepeatCounter("mom", "hi mom", false);
+      Assert.AreEqual("mom", myCounter.GetTarget());
+    }
+
+    [TestMethod]
     public void GetPhrase_CallConstructor_GetPhraseReturnsPhrase()
     {
       RepeatCounter myCounter = new RepeatCounter("mom", "hi mom", false);
