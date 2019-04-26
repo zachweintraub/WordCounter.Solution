@@ -4,20 +4,17 @@ using WordCounter.Models;
 namespace WordCounter.Tests
 {
   [TestClass]
-  public class RepeatCounter
+  public class RepeatCounterTest
   {
     [TestMethod]
     public void RepeatCounter_CallConstructor_NewInstanceOfRepeatCounter()
     {
       RepeatCounter myCounter = new RepeatCounter();
-      Assert.AreEqual(typeof(RepeatCounter), myCounter.GetType());
+      Assert.AreEqual("testing", myCounter.test);
     }
 
     [TestMethod]
-    public void GetTest_CallGetTest_ReturnTesting()
-    {
-      RepeatCounter myCounter = new RepeatCounter();
-      Assert.AreEqual("testing", myCounter.GetTest());
-    }
+    public void RepeatCounter
+
   }
 }

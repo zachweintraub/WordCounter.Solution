@@ -2,11 +2,15 @@ namespace WordCounter.Models
 {
   public class RepeatCounter
   {
-    private string _test = "testing";
+    private string _target;
+    private string _phrase;
+    private bool _isCaseSensitive;
 
-    public string GetTest()
+    public RepeatCounter(string Target, string Phrase, bool IsCaseSensitive)
     {
-      return _test;
+      _target = Target;
+      _phrase = Phrase;
+      _isCaseSensitive = IsCaseSensitive;
     }
   }
 }
