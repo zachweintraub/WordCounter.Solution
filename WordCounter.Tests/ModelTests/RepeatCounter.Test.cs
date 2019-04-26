@@ -34,5 +34,14 @@ namespace WordCounter.Tests
       Assert.AreEqual(1, myCounter.CalculateCount());
     }
 
+    [TestMethod]
+    public void CalculateCount_SingleInstanceInMultiWordPhrase_ReturnOne()
+    {
+      RepeatCounter myCounter = new RepeatCounter("mom", "hi mom", false);
+      Assert.AreEqual(1, myCounter.CalculateCount());
+    }
+
+    
+
   }
 }
