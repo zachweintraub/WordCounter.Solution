@@ -23,18 +23,21 @@ namespace WordCounter.Models
       return _target;
     }
 
+
     public int CalculateCount()
     {
       int counter = 0;
+      string target = _target;
+      string phrase = _phrase;
       if(!_isCaseSensitive)
       {
-        _phrase.ToLower();
-        _target.ToLower();
+        phrase = phrase.ToLower();
+        target = target.ToLower();
       }
-      string[] wordsInPhrase = _phrase.Split(" ");
+      string[] wordsInPhrase = phrase.Split(" ");
       foreach (string word in wordsInPhrase)
       {
-        if(word == _target)
+        if(word == target)
         {
           counter++;
         }

@@ -49,11 +49,17 @@ namespace WordCounter.Tests
     }
 
     [TestMethod]
-    public void CalculateCount_OneCaseSensitiveInstanceInMultiWordPhrase_ReturnThree()
+    public void CalculateCount_OneCaseSensitiveInstanceInMultiWordPhrase_ReturnOne()
     {
       RepeatCounter myCounter = new RepeatCounter("hello", "Hello world hello galaxy heLLO universe", true);
       Assert.AreEqual(1, myCounter.CalculateCount());
     }
 
+    [TestMethod]
+    public void CalculateCount_ThreeNonCaseSensitiveInstancesInMultiWordPhrase_ReturnThree()
+    {
+      RepeatCounter myCounter = new RepeatCounter("HELLO", "Hello world hello galaxy heLLO universe", false);
+      Assert.AreEqual(3, myCounter.CalculateCount());
+    }
   }
 }
