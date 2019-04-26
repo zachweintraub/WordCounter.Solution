@@ -27,5 +27,12 @@ namespace WordCounter.Tests
       Assert.AreEqual("hi mom", myCounter.GetPhrase());
     }
 
+    [TestMethod]
+    public void CalculateCount_TargetAndPhraseAreSame_ReturnOne()
+    {
+      RepeatCounter myCounter = new RepeatCounter("mom", "mom", false);
+      Assert.AreEqual(1, myCounter.CalculateCount());
+    }
+
   }
 }

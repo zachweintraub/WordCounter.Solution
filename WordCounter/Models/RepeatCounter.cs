@@ -22,5 +22,19 @@ namespace WordCounter.Models
     {
       return _target;
     }
+
+    public int CalculateCount()
+    {
+      int counter = 0;
+      string[] wordsInPhrase = _phrase.Split(" ");
+      foreach (string word in wordsInPhrase)
+      {
+        if(word == _target)
+        {
+          counter++;
+        }
+      }
+      return counter;
+    }
   }
 }
