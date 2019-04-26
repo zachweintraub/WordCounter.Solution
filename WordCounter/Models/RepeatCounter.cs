@@ -26,6 +26,11 @@ namespace WordCounter.Models
     public int CalculateCount()
     {
       int counter = 0;
+      if(!_isCaseSensitive)
+      {
+        _phrase.ToLower();
+        _target.ToLower();
+      }
       string[] wordsInPhrase = _phrase.Split(" ");
       foreach (string word in wordsInPhrase)
       {
