@@ -12,5 +12,10 @@ namespace WordCounter.Models
       _phrase = Phrase;
       _isCaseSensitive = IsCaseSensitive;
     }
+
+    public string GetPhrase()
+    {
+      return _phrase;
+    }
   }
 }

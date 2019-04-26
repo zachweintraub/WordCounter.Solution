@@ -9,12 +9,16 @@ namespace WordCounter.Tests
     [TestMethod]
     public void RepeatCounter_CallConstructor_NewInstanceOfRepeatCounter()
     {
-      RepeatCounter myCounter = new RepeatCounter();
-      Assert.AreEqual("testing", myCounter.test);
+      RepeatCounter myCounter = new RepeatCounter("mom", "hi mom", false);
+      Assert.AreEqual(typeof(RepeatCounter), myCounter.GetType());
     }
 
     [TestMethod]
-    public void RepeatCounter
+    public void GetPhrase_CallConstructor_GetPhraseReturnsPhrase()
+    {
+      RepeatCounter myCounter = new RepeatCounter("mom", "hi mom", false);
+      Assert.AreEqual("hi mom", myCounter.GetPhrase());
+    }
 
   }
 }
