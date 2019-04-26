@@ -41,7 +41,12 @@ namespace WordCounter.Tests
       Assert.AreEqual(1, myCounter.CalculateCount());
     }
 
-    
+    [TestMethod]
+    public void CalculateCount_ThreeInstancesInMultiWordPhrase_ReturnThree()
+    {
+      RepeatCounter myCounter = new RepeatCounter("hello", "hello world hello galaxy hello universe", false);
+      Assert.AreEqual(3, myCounter.CalculateCount());
+    }
 
   }
 }
