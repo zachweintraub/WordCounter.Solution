@@ -15,3 +15,5 @@
 /Users/zachweintraub/Desktop/play/WordCounter.Solution/WordCounter.Tests/obj/Debug/netcoreapp2.2/WordCounter.Tests.csproj.CopyComplete
 /Users/zachweintraub/Desktop/play/WordCounter.Solution/WordCounter.Tests/obj/Debug/netcoreapp2.2/WordCounter.Tests.dll
 /Users/zachweintraub/Desktop/play/WordCounter.Solution/WordCounter.Tests/obj/Debug/netcoreapp2.2/WordCounter.Tests.pdb
+/Users/zachweintraub/Desktop/play/WordCounter.Solution/WordCounter.Tests/bin/Debug/netcoreapp2.2/WordCounter.Views.dll
+/Users/zachweintraub/Desktop/play/WordCounter.Solution/WordCounter.Tests/bin/Debug/netcoreapp2.2/WordCounter.Views.pdb
