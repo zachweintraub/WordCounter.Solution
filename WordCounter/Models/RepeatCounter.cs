@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace WordCounter.Models
 {
   public class RepeatCounter
@@ -5,12 +8,18 @@ namespace WordCounter.Models
     private string _target;
     private string _phrase;
     private bool _isCaseSensitive;
+    private int _id;
+    private DateTime _searchTime;
+    private static List<RepeatCounter> _allSearches = new List<RepeatCounter>{};
 
     public RepeatCounter(string Target, string Phrase, bool IsCaseSensitive)
     {
       _target = Target;
       _phrase = Phrase;
       _isCaseSensitive = IsCaseSensitive;
+      _searchTime = DateTime.Now;
+      _allSearches.Add(this);
+      _id = _allSearches.Count;
     }
 
     public string GetPhrase()
@@ -23,6 +32,25 @@ namespace WordCounter.Models
       return _target;
     }
 
+    public DateTime GetSearchTime()
+    {
+      return _searchTime;
+    }
+
+    public int GetId()
+    {
+      return _id;
+    }
+
+    public static List<RepeatCounter> GetAllSearches()
+    {
+      return _allSearches;
+    }
+
+    public static RepeatCounter Find(int id)
+    {
+      return _allSearches[id-1];
+    }
 
     public int CalculateCount()
     {

@@ -46,3 +46,4 @@
 /Users/zachweintraub/Desktop/play/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp2.2/WordCounter.csproj.CopyComplete
 /Users/zachweintraub/Desktop/play/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_Layout.g.cshtml.cs
 /Users/zachweintraub/Desktop/play/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp2.2/Razor/Views/RepeatCounters/New.g.cshtml.cs
+/Users/zachweintraub/Desktop/play/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp2.2/Razor/Views/RepeatCounters/Show.g.cshtml.cs

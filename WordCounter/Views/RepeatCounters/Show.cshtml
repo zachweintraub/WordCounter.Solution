@@ -1,0 +1,9 @@
+@{
+Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<p>The word "@Model.GetTarget()" appears @Model.CalculateCount() times in the following text:</p>
+<p>"@Model.GetPhrase()"</p>
+(search completed @Model.GetSearchTime())
+<form action="/repeatcounter/new" method="get">
+  <button type="submit">Search anew!</button>
+</form>
