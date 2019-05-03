@@ -7,3 +7,5 @@
 /Users/zachweintraub/Desktop/play/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp2.2/WordCounter.AssemblyInfo.cs
 /Users/zachweintraub/Desktop/play/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp2.2/WordCounter.dll
 /Users/zachweintraub/Desktop/play/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp2.2/WordCounter.pdb
+/Users/zachweintraub/Desktop/play/WordCounter.Solution/WordCounter/bin/Debug/netcoreapp2.2/WordCounter.runtimeconfig.json
+/Users/zachweintraub/Desktop/play/WordCounter.Solution/WordCounter/bin/Debug/netcoreapp2.2/WordCounter.runtimeconfig.dev.json
