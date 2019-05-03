@@ -1,9 +1,18 @@
 @{
 Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@if(Model.GetCaseSensitive())
+{
+  <p class="search-item-header">Case-Sensitive Search</p>
+}
+else
+{
+  <p class="search-item-header">Non-Case-Sensitive Search</p>
+}
 <p>The word "@Model.GetTarget()" appears @Model.CalculateCount() times in the following text:</p>
 <p>"@Model.GetPhrase()"</p>
-(search completed @Model.GetSearchTime())
-<form action="/repeatcounter/new" method="get">
+<p class="search-item-footer">(search completed @Model.GetSearchTime())</p>
+<form action="/repeatcounter/new" method="get"><br><br>
   <button type="submit">Search anew!</button>
 </form>
+@Html.Partial("SearchHistory")

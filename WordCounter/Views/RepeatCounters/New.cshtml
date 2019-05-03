@@ -6,5 +6,9 @@ Layout = "~/Views/Shared/_Layout.cshtml";
  <input id="phrase" name="phrase" type="text"><br>
  <label for="target">Word to Count:</label>
  <input id="target" name="target" type="text"><br>
+ <input id="casesensitive" name="casesensitive" value="true" type="checkbox" />
+ <label for="casesensitive">Make search case-sensitive?</label><br><br>
  <button type="submit">Count That Word!</button>
 </form>
+
+@Html.Partial("SearchHistory")

@@ -4,3 +4,17 @@
   color: pink;
   text-shadow: 2px 2px 4px white;
 }
+
+.search-item-header{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.search-item-footer{
+  font-style: italic;
+}
+
+#phrase{
+  height: 100px;
+  width: 400px;
+}

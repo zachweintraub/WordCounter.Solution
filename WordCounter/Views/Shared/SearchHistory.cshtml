@@ -1,0 +1,19 @@
+@using System;
+@using System.Collections.Generic;
+@using WordCounter.Models;
+<br><br>
+<h4>Search History</h4>
+@if(RepeatCounter.GetAllSearches().Count < 1)
+{
+  <p>You have no searches to display.</p>
+}
+else
+{
+foreach (RepeatCounter repeatCounter in RepeatCounter.GetAllSearches())
+{
+  <p>@repeatCounter.GetSearchTime(): You searched for the word @(repeatCounter.GetTarget()). <a href="/repeatcounter/@repeatCounter.GetId()">View Details</a></p>
+}
+  <form action="/repeatcounter/clearhistory" method="post">
+    <button type="submit">Clear History</button>
+  </form>
+}

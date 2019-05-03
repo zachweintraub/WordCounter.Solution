@@ -12,17 +12,24 @@ namespace WordCounter.Controllers
     }
 
     [HttpPost("/repeatcounter")]
-    public ActionResult Create(string phrase, string target)
+    public ActionResult Create(string phrase, string target, bool casesensitive = false)
     {
-      RepeatCounter newRepeatCounter = new RepeatCounter(target, phrase, false);
+      RepeatCounter newRepeatCounter = new RepeatCounter(target, phrase, casesensitive);
       return View("Show", newRepeatCounter);
     }
 
     [HttpGet("/repeatcounter/{id}")]
     public ActionResult Show(int id)
     {
+      RepeatCounter myRepeatCounter = RepeatCounter.Find(id);
+      return View(myRepeatCounter);
+    }
 
-      return View();
+    [HttpPost("/repeatcounter/clearhistory")]
+    public ActionResult Delete()
+    {
+      RepeatCounter.ClearHistory();
+      return RedirectToAction("New");
     }
 
   }

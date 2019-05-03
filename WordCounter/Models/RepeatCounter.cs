@@ -42,6 +42,11 @@ namespace WordCounter.Models
       return _id;
     }
 
+    public bool GetCaseSensitive()
+    {
+      return _isCaseSensitive;
+    }
+
     public static List<RepeatCounter> GetAllSearches()
     {
       return _allSearches;
@@ -50,6 +55,11 @@ namespace WordCounter.Models
     public static RepeatCounter Find(int id)
     {
       return _allSearches[id-1];
+    }
+
+    public static void ClearHistory()
+    {
+      _allSearches.Clear();
     }
 
     public int CalculateCount()
