@@ -10,10 +10,18 @@ namespace WordCounter.Tests
   public class RepeatCountersControllerTest
   {
     [TestMethod]
-    public void Index_ReturnsCorrectView_True()
+    public void New_ReturnsCorrectView_True()
     {
-      HomeController controller = new HomeController();
-      ActionResult indexView = controller.Index();
+      RepeatCountersController controller = new RepeatCountersController();
+      ActionResult indexView = controller.New();
+      Assert.IsInstanceOfType(indexView, typeof(ViewResult));
+    }
+
+    [TestMethod]
+    public void Show_ReturnsCorrectView_True()
+    {
+      RepeatCountersController controller = new RepeatCountersController();
+      ActionResult indexView = controller.Show();
       Assert.IsInstanceOfType(indexView, typeof(ViewResult));
     }
   }
