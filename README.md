@@ -21,13 +21,16 @@ A C# application that counts instances of a given word within a given string. Th
 
 ## Setup/Installation Requirements
 
-1. This application is temporarily lacking a user interface :/
+1. Clone this repository: $ git clone https:/github.com/zachweintraub/WordCounter.Solution.git
+2. Change into the work directory:: $ cd WordCounter.Solution
+3. To edit the project, open the project in your preferred text editor.
+4. To run the program, first navigate to the WordCounter directory, then run the following commands: $ dotnet restore $ dotnet run, and open the resulting url in your browser of choice.
 
 ## Known Bugs
 * No known bugs at this time.
 
 ## Technologies Used
-* C#/.NET
+* C# .NET Core App 2.2.103 & ASP.NET Core Mono Atom Git Github
 
 ## Support and contact details
 
