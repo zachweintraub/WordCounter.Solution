@@ -66,9 +66,12 @@ namespace WordCounter.Models
     public int CalculateCount()
     {
       int counter = 0;
+      if(_phrase == "")
+      {
+        return counter;
+      }
       string target = _target;
       string phrase = Regex.Replace(_phrase, @"\p{P}", "");
-      Console.WriteLine(phrase);
       if(!_isCaseSensitive)
       {
         phrase = phrase.ToLower();
