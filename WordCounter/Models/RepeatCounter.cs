@@ -1,4 +1,5 @@
 using System;
+using System.Text.RegularExpressions; //sorry but i couldn't resist
 using System.Collections.Generic;
 
 namespace WordCounter.Models
@@ -66,7 +67,8 @@ namespace WordCounter.Models
     {
       int counter = 0;
       string target = _target;
-      string phrase = _phrase;
+      string phrase = Regex.Replace(_phrase, @"\p{P}", "");
+      Console.WriteLine(phrase);
       if(!_isCaseSensitive)
       {
         phrase = phrase.ToLower();

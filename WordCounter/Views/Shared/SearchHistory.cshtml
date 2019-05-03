@@ -11,9 +11,9 @@ else
 {
 foreach (RepeatCounter repeatCounter in RepeatCounter.GetAllSearches())
 {
-  <p>@repeatCounter.GetSearchTime(): You searched for the word @(repeatCounter.GetTarget()). <a href="/repeatcounter/@repeatCounter.GetId()">View Details</a></p>
+  <p>@repeatCounter.GetSearchTime(): You searched for the word "@(repeatCounter.GetTarget())". <a href="/repeatcounter/@repeatCounter.GetId()">View Details</a></p>
 }
   <form action="/repeatcounter/clearhistory" method="post">
-    <button type="submit">Clear History</button>
+    <button class="clear-history-button" type="submit">Clear History</button>
   </form>
 }

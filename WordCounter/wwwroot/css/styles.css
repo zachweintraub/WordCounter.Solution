@@ -18,3 +18,12 @@
   height: 100px;
   width: 400px;
 }
+
+.clear-history-button {
+     background:none!important;
+     color: blue;
+     border:none;
+     padding:0!important;
+     font: inherit;
+     cursor: pointer;
+}
