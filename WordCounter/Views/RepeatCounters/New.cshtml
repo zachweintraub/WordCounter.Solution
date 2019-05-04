@@ -3,9 +3,9 @@ Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <form action="/repeatcounter" method="post">
  <label for="phrase">Text to Search:</label>
- <input id="phrase" name="phrase" type="text"><br>
+ <input required id="phrase" name="phrase" type="text"><br>
  <label for="target">Word to Count:</label>
- <input id="target" name="target" type="text"><br>
+ <input required id="target" name="target" type="text"><br>
  <input id="casesensitive" name="casesensitive" value="true" type="checkbox" />
  <label for="casesensitive">Make search case-sensitive?</label><br><br>
  <button type="submit">Count That Word!</button>
