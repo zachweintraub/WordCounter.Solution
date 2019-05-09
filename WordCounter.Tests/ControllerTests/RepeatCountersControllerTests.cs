@@ -21,6 +21,7 @@ namespace WordCounter.Tests
     public void Show_ReturnsCorrectView_True()
     {
       RepeatCountersController controller = new RepeatCountersController();
+      RepeatCounter myCounter = new RepeatCounter("HELLO", "Hello", false);
       ActionResult indexView = controller.Show(1);
       Assert.IsInstanceOfType(indexView, typeof(ViewResult));
     }
